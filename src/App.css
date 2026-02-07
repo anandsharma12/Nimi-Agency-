@@ -1,0 +1,31 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --gray-800: #1a1a1a;
+
+    --text-muted: rgba(255, 255, 255, 0.7);
+
+    --header-height: 80px;
+    --container-width: 1400px;
+
+    --radius-lg: 16px;
+
+    --icon-size: 24px;
+    --button-size: 54px;
+    --item-margin: calc((var(--button-size)));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.app-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

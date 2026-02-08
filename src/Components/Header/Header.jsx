@@ -9,14 +9,16 @@ const Header = () => {
     <>
       <header className="header">
         <div className="header-inner">
-
           <div className="header-top">
             <div className="header-top-left">
-
-              <NavLink to="/" className="logo">
-                <img src="https://dhgf5mcbrms62.cloudfront.net/116421013/header-ykyLhx/oPvdkwY-200x200.webp" alt="Nimi Agency" />
-              </NavLink>
-
+              <div className="logo">
+                <NavLink to="/">
+                  <img
+                    src="https://dhgf5mcbrms62.cloudfront.net/116421013/header-ykyLhx/oPvdkwY-200x200.webp"
+                    alt="Nimi Agency"
+                  />
+                </NavLink>
+              </div>
             </div>
 
             <div className="header-top-right">
@@ -29,7 +31,7 @@ const Header = () => {
                 <NavLink to="/account">
                   <span className="icon desktop-only">👤</span>
                 </NavLink>
-                
+
                 <NavLink to="/cart">
                   <span className="icon desktop-only">👜</span>
                 </NavLink>
@@ -56,7 +58,6 @@ const Header = () => {
               <NavLink to="/contact">Contact</NavLink>
             </nav>
           </div>
-
         </div>
       </header>
 
@@ -66,12 +67,24 @@ const Header = () => {
         </button>
 
         <nav className="mobile-nav">
-          <NavLink onClick={() => setMenuOpen(false)} to="/about">About Us</NavLink>
-          <NavLink onClick={() => setMenuOpen(false)} to="/course">Course</NavLink>
-          <NavLink onClick={() => setMenuOpen(false)} to="/management">Mnmgt</NavLink>
-          <NavLink onClick={() => setMenuOpen(false)} to="/accounts">Accounts</NavLink>
-          <NavLink onClick={() => setMenuOpen(false)} to="/cart">Cart</NavLink>
-          <NavLink onClick={() => setMenuOpen(false)} to="/contact">Contact</NavLink>
+          <NavLink onClick={() => setMenuOpen(false)} to="/about">
+            About Us
+          </NavLink>
+          <NavLink onClick={() => setMenuOpen(false)} to="/course">
+            Course
+          </NavLink>
+          <NavLink onClick={() => setMenuOpen(false)} to="/management">
+            Mnmgt
+          </NavLink>
+          <NavLink onClick={() => setMenuOpen(false)} to="/accounts">
+            Accounts
+          </NavLink>
+          <NavLink onClick={() => setMenuOpen(false)} to="/cart">
+            Cart
+          </NavLink>
+          <NavLink onClick={() => setMenuOpen(false)} to="/contact">
+            Contact
+          </NavLink>
         </nav>
       </div>
     </>

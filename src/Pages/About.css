@@ -1,0 +1,241 @@
+/* ================= GENERAL ================= */
+.about-page {
+  font-family: var(--global-body-font-family), system-ui, sans-serif;
+}
+
+/* ================= ABOUT SECTION ================= */
+.about-section-wrapper {
+  width: 80%; /* match image width */
+  max-width: 1100px;
+  margin: 0 auto; /* center horizontally */
+}
+
+.about-section-content {
+  display: flex;
+  flex-direction: row; /* left title + right content */
+  gap: 170px; /* space between title and content */
+}
+
+.about-title {
+  flex: 0 0 200px; /* fixed width for title */
+}
+
+.about-title h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #111;
+  margin-top: 15px;
+}
+
+.about-content {
+  flex: 1; /* content takes remaining space */
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .about-section-wrapper {
+    width: 92%;
+  }
+
+  .about-section-content {
+    flex-direction: column; /* stack title above content */
+    gap: 0;
+  }
+
+  .about-title {
+    flex: none;
+    margin-bottom: -20px;
+  }
+}
+
+.about-section {
+  background: #fff;
+  padding: 120px 80px;
+}
+
+.about-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 120px;
+}
+
+.about-title h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #111;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-section {
+    padding: 80px 30px;
+  }
+}
+
+/* ================= IMAGE WRAPPERS ================= */
+.about-image-wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto; /* center images */
+}
+
+.about-image-wrapper .about-image {
+  width: 100%;
+  height: auto; /* maintains aspect ratio */
+  display: block;
+}
+
+/* Overlay for dark effect */
+.about-image-wrapper .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* ================= THIRD SECTION ================= */
+.about-third-section {
+  margin-top: 160px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-third-container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-third-text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #000;
+  text-align: left;
+}
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-third-container {
+    width: 92%; /* same as images on tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-third-container {
+    width: 92%;
+  }
+  .about-third-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-third-container {
+    width: 95%;
+  }
+  .about-third-text {
+    font-size: 15px;
+  }
+}
+/* ================= Fourth SECTION ================= */
+.about-fourth-section {
+  margin-top: 160px;
+  display: flex;
+  justify-content: center;
+}
+/* ================= FIFTH SECTION TEXT ================= */
+.about-image-wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto; /* center all images */
+}
+
+.about-image-wrapper .about-image {
+  width: 100%;
+  max-height: 500px; /* controls excessive height */
+  object-fit: cover; /* crop if taller than max-height */
+  display: block;
+}
+
+.about-image-wrapper .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* ================= FIFTH SECTION TEXT ================= */
+.about-fifth-section {
+  margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-fifth-text-below {
+  margin-top: 20px;
+  width: 80%; /* same as image wrapper */
+  max-width: 1100px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .about-image-wrapper,
+  .about-fifth-text-below {
+    width: 92%;
+  }
+  .about-image-wrapper .about-image {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-image-wrapper,
+  .about-fifth-text-below {
+    width: 92%;
+  }
+  .about-image-wrapper .about-image {
+    max-height: 350px;
+  }
+  .about-fifth-text-below {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-image-wrapper,
+  .about-fifth-text-below {
+    width: 95%;
+  }
+  .about-image-wrapper .about-image {
+    max-height: 250px;
+  }
+  .about-fifth-text-below {
+    font-size: 15px;
+  }
+}

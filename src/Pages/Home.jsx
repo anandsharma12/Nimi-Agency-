@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import Header from "../Components/Header/Header";
 const Home = () => {
   return (
     <div className="home-page">
@@ -93,13 +94,13 @@ const Home = () => {
         <p className="contact-email">info@nini-agency.com</p>
 
         <div class="social-icons">
-          <a href="#" class="icon whatsapp">
+          <a href="#" class="icons whatsapp">
             <i class="fab fa-whatsapp"></i>
           </a>
-          <a href="#" class="icon telegram">
+          <a href="#" class="icons telegram">
             <i class="fab fa-telegram-plane"></i>
           </a>
-          <a href="#" class="icon instagram">
+          <a href="#" class="icons instagram">
             <i class="fab fa-instagram"></i>
           </a>
         </div>

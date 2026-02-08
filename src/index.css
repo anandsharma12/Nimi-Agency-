@@ -1,0 +1,7 @@
+/* REQUIRED for React layout to work correctly */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}

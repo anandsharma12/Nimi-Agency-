@@ -1,0 +1,395 @@
+/* Whole page background */
+.home-page {
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+/* ---------- FIRST SECTION ---------- */
+.hero {
+  width: 100%;
+  height: 60vh;
+  min-height: 420px;
+  background-image: url("https://dhgf5mcbrms62.cloudfront.net/116421013/cover-hx6df2/UvXOyZN-2000x2000.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-btn {
+  padding: 14px 36px;
+  font-size: 16px;
+  color: #fff;
+  background: transparent;
+  border: 1.5px solid #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* ---------- GAP BETWEEN SECTIONS ---------- */
+.second-section {
+  margin-top: 80px; /* 👈 GAP */
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------- SECOND SECTION ---------- */
+.second-overlay {
+  width: 80%; /* 👈 NOT FULL WIDTH */
+  max-width: 1100px;
+  height: 55vh;
+  min-height: 380px;
+  background-image: url("https://dhgf5mcbrms62.cloudfront.net/116421013/slider-FpbhKu/IaQWw1n-2000x2000.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  position: relative;
+}
+
+/* Dark overlay */
+.second-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 17px;
+  padding: 0 40px 60px; /* 👈 moves text slightly UP */
+  line-height: 2;
+}
+
+/* control spacing between paragraphs */
+.content p {
+  margin: 0; /* 👈 small gap between text blocks */
+}
+
+/* remove margin from last paragraph */
+.content p:last-child {
+  margin-bottom: 59px;
+}
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .second-overlay {
+    width: 92%;
+    height: 45vh;
+  }
+
+  .content {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+}
+
+/* Third Section */
+.third-section {
+  min-height: 60vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.third-content {
+  max-width: 900px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.highlight {
+  font-size: 26px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+/* Fourth Section */
+/* ---------- CTA / SHOP SECTION ---------- */
+.cta-section {
+  width: 100%;
+  height: 50vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-btn {
+  padding: 16px 44px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+  background: transparent;
+  border: 1.5px solid #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* ---------- FIFTH SECTION (MATCH SECOND SECTION WIDTH) ---------- */
+.fifth-section {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.fifth-overlay {
+  width: 80%; /* 👈 SAME AS SECOND SECTION */
+  max-width: 1100px;
+  height: 55vh;
+  min-height: 380px;
+  background-image: url("https://dhgf5mcbrms62.cloudfront.net/116421013/slider-8MZ8NT/z8vis58-2000x2000.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* dark overlay (optional but recommended for consistency) */
+.fifth-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .fifth-overlay {
+    width: 92%;
+    height: 45vh;
+  }
+}
+
+/* ---------- SIXTH SECTION ---------- */
+.sixth-section {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  background: #000;
+}
+
+.sixth-content {
+  width: 80%; /* 👈 matches second & fifth sections */
+  max-width: 1100px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left; /* 👈 left aligned */
+  padding: 200px 0;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .sixth-content {
+    width: 92%;
+    font-size: 15px;
+  }
+}
+
+/* ---------- SEVENTH SECTION (MATCH SECOND SECTION) ---------- */
+.seventh-section {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.seventh-overlay {
+  width: 80%; /* same as second section */
+  max-width: 1100px;
+  height: 55vh; /* same height */
+  min-height: 380px;
+  background-image: url("https://dhgf5mcbrms62.cloudfront.net/116421013/slider-2J7KgB/oahfV2W-2000x2000.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* optional dark overlay for consistency */
+.seventh-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .seventh-overlay {
+    width: 92%;
+    height: 45vh;
+  }
+}
+
+/* ---------- CLIENTS SECTION ---------- */
+.clients-section {
+  background: #000;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.clients-title {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 60px;
+  font-weight: 500;
+}
+
+/* grid */
+.clients-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* cards */
+.client-card {
+  background: #fff;
+  width: 320px; /* 👈 SAME WIDTH */
+  height: 110px; /* 👈 SAME HEIGHT */
+  padding: 24px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.client-text {
+  font-size: 15px;
+  color: #222;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.stars {
+  color: #f5c542;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.client-name {
+  font-size: 13px;
+  color: #999;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .clients-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ---------- CONTACT SECTION ---------- */
+.contact-section {
+  background: #000;
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 20px;
+}
+
+.contact-title {
+  color: #aaa;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.contact-email {
+  color: #fff;
+  font-size: 16px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+a {
+  text-decoration: none;
+}
+/* Common icon style */
+.icon {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 28px;
+  transition: all 0.35s ease;
+}
+
+/* Hover animation */
+.icon:hover {
+  transform: translateY(-6px) scale(1.05);
+}
+
+/* WhatsApp */
+.icon.whatsapp:hover {
+  background-color: #25d366;
+  border-color: #25d366;
+  color: #fff;
+}
+
+/* Telegram */
+.icon.telegram:hover {
+  background-color: #229ed9;
+  border-color: #229ed9;
+  color: #fff;
+}
+
+/* Instagram gradient */
+.icon.instagram:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  border-color: transparent;
+  color: #fff;
+}

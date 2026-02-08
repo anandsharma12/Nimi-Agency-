@@ -63,12 +63,11 @@
 }
 
 .logo img {
-  height: calc(var(--header-height) - 20px);;
-  width: 400px;
-  display: block;
-  object-fit: contain;
+    height: calc(var(--header-height) - 20px);;
+    width: 400px;
+    display: block;
+    object-fit: contain;
    margin-left: 50%;
-
 }
 
 

@@ -12,12 +12,11 @@ const Header = () => {
 
           <div className="header-top">
             <div className="header-top-left">
-              <div className="logo">
-                <img
-                  src="https://dhgf5mcbrms62.cloudfront.net/116421013/header-ykyLhx/oPvdkwY-200x200.webp"
-                  alt="Nimi Agency"
-                />
-              </div>
+
+              <NavLink to="/" className="logo">
+                <img src="https://dhgf5mcbrms62.cloudfront.net/116421013/header-ykyLhx/oPvdkwY-200x200.webp" alt="Nimi Agency" />
+              </NavLink>
+
             </div>
 
             <div className="header-top-right">
@@ -27,8 +26,13 @@ const Header = () => {
                   <span className="search-icon">🔍</span>
                 </div>
 
-                <span className="icon desktop-only">👤</span>
-                <span className="icon desktop-only">👜</span>
+                <NavLink to="/account">
+                  <span className="icon desktop-only">👤</span>
+                </NavLink>
+                
+                <NavLink to="/cart">
+                  <span className="icon desktop-only">👜</span>
+                </NavLink>
 
                 {/* hmburger */}
                 <button

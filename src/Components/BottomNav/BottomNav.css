@@ -1,0 +1,34 @@
+/* ================= BOTTOM NAV ================= */
+
+.bottom-links {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 80px;
+}
+
+.bottom-links a {
+  text-decoration: none;
+  color: #9a9a9a;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.bottom-links a:hover {
+  color: #0b2cff; /* dark blue */
+}
+
+.bottom-link-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .bottom-links {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}

@@ -51,7 +51,7 @@ const Header = () => {
           <div className="header-bottom desktop-only">
             <nav className="nav">
               <NavLink to="/about">About Us</NavLink>
-              <NavLink to="/course">Course</NavLink>
+              <NavLink to="/courses">Course</NavLink>
               <NavLink to="/management">Mnmgt</NavLink>
               <NavLink to="/products">Accounts</NavLink>
               <NavLink to="/cart">Cart</NavLink>
@@ -70,7 +70,7 @@ const Header = () => {
           <NavLink onClick={() => setMenuOpen(false)} to="/about">
             About Us
           </NavLink>
-          <NavLink onClick={() => setMenuOpen(false)} to="/course">
+          <NavLink onClick={() => setMenuOpen(false)} to="/courses">
             Course
           </NavLink>
           <NavLink onClick={() => setMenuOpen(false)} to="/management">

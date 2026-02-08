@@ -1,0 +1,32 @@
+.courses-page {
+  padding: 80px 60px 40px;
+}
+
+.page-header {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.page-header h2 {
+  font-size: 32px;
+}
+
+.breadcrumb {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* SORT */
+.sort-wrapper {
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+
+/* GRID */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}

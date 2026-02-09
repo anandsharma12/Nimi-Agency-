@@ -27,7 +27,7 @@ const Products = () => {
   return (
     <section className="products-page">
       {/* SORT */}
-      <div className="sort-wrapper">
+      <div className="p-sort-wrapper">
         <button
           className="sort-btn"
           onClick={() => setSortOpen(prev => !prev)}

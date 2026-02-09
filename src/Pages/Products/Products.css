@@ -6,7 +6,7 @@
 }
 
 /* ===== SORT ===== */
-.sort-wrapper {
+.p-sort-wrapper {
   position: absolute;
   right: 140px;
   top: inherit;
@@ -112,7 +112,7 @@
     padding: 60px 20px;
   }
 
-  .sort-wrapper {
+  .p-sort-wrapper {
     right: 20px;
     top: inherit;
   }

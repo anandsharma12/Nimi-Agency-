@@ -31,7 +31,7 @@ const Courses = () => {
         <h2>Course</h2>
         <p className="course-breadcrumb">Home / Store / Course</p>
 
-        <div className="sort-wrapper">
+        <div className="c-sort-wrapper">
           <button className="sort-btn" onClick={() => setSortOpen((p) => !p)}>
             SORT BY ▾
           </button>

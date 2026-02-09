@@ -1,0 +1,101 @@
+.site-footer {
+  position: relative;
+  padding: 60px 20px;
+  background: #fff;
+  border-top: 1px solid #eee;
+  font-family: var(--global-body-font-family), system-ui, sans-serif;
+}
+
+/* CENTER CONTENT */
+.footer-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* COMMON TEXT STYLES */
+.footer-title,
+.footer-link,
+.footer-muted {
+  display: inline-block;
+  margin-bottom: 14px; /* SAME GAP FOR ALL */
+}
+
+/* TITLE */
+.footer-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* LINK + MUTED TEXT */
+.footer-link,
+.footer-muted {
+  font-size: 15px;
+  color: #888;
+}
+
+/* UNDERLINE ANIMATION (shared) */
+.footer-link,
+.footer-muted {
+  position: relative;
+  cursor: pointer;
+}
+
+.footer-link::after,
+.footer-muted::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+.footer-link:hover::after,
+.footer-muted:hover::after {
+  transform: scaleX(1);
+}
+
+/* MUTED TEXT */
+.footer-muted {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* CHAT BUTTON */
+.chat-widget {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 54px;
+  height: 54px;
+  background: #000;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.chat-icon {
+  color: #fff;
+  font-size: 22px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 40px 16px;
+  }
+
+  .chat-widget {
+    right: 20px;
+    bottom: 20px;
+  }
+}

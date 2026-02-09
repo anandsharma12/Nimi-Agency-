@@ -29,13 +29,10 @@ const Courses = () => {
       {/* HEADER */}
       <div className="page-header">
         <h2>Course</h2>
-        <p className="breadcrumb">Home / Store / Course</p>
+        <p className="course-breadcrumb">Home / Store / Course</p>
 
         <div className="sort-wrapper">
-          <button
-            className="sort-btn"
-            onClick={() => setSortOpen((p) => !p)}
-          >
+          <button className="sort-btn" onClick={() => setSortOpen((p) => !p)}>
             SORT BY ▾
           </button>
 
@@ -51,11 +48,9 @@ const Courses = () => {
 
       {/* GRID */}
       <div className="courses-grid">
-
         {sortedCourses.map((course) => (
           <StoreItemCard key={course.id} product={course} />
         ))}
-
       </div>
 
       <BottomNav />

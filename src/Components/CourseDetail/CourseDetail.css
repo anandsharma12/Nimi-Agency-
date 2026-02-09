@@ -1,0 +1,310 @@
+/* ================= PAGE ================= */
+.course-detail-page {
+  padding: 60px 80px;
+  background: #f6f6f6;
+  font-family: var(--global-body-font-family), system-ui, sans-serif;
+}
+
+.course-detail-wrapper {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 80px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* ================= CAROUSEL ================= */
+.course-detail-image {
+  position: relative;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.carousel-track img {
+  min-width: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.carousel-arrow.left {
+  left: 10px;
+}
+.carousel-arrow.right {
+  right: 10px;
+}
+
+/* dots */
+.carousel-dots {
+  display: none;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #111;
+}
+
+/* ================= INFO ================= */
+.course-detail-info h1 {
+  font-size: 28px;
+}
+
+.course-detail-info h1 span {
+  font-weight: 400;
+}
+
+.course-detail-info h2 {
+  margin: 15px 0;
+}
+
+.bag-text {
+  color: #555;
+}
+
+/* buttons */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.action-buttons .btn-dark,
+.action-buttons .btn-outline {
+  width: 200px;
+}
+.btn-outline,
+.btn-dark {
+  width: 200px;
+  padding: 12px;
+}
+
+.btn-outline {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.btn-outline:hover {
+  background: #f2f2f2;
+}
+
+.btn-dark {
+  background: #111;
+  color: #fff;
+  border: none;
+}
+
+.btn-dark:hover {
+  background: #333;
+}
+
+/* PRODUCT DETAILS */
+.product-details {
+  margin-top: 30px;
+}
+
+.product-details p {
+  line-height: 2;
+}
+
+/* SAVE LATER */
+.save-later {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.favorite-btn {
+  display: inline-flex;
+  align-items: center; /* ✅ vertical center */
+  justify-content: center; /* ✅ horizontal center */
+  gap: 8px;
+
+  padding: 10px 16px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+
+  width: 28%;
+  margin-top: 12px;
+
+  font-size: 14px;
+  line-height: 1; /* ✅ fixes text jump */
+}
+.heart {
+  font-size: 16px;
+  line-height: 1; /* ✅ aligns heart with text */
+  display: inline-flex;
+  align-items: center;
+}
+
+.favorite-btn:hover {
+  background: #f5f5f5;
+}
+
+.favorite-btn.active .heart {
+  color: red;
+}
+
+/* SHARE */
+.share-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.icon {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.icon-box {
+  width: 28px;
+  height: 28px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fb-icon-box img {
+  width: 20px;
+  height: 20px;
+}
+.pin-icon-box img {
+  width: 25px;
+  height: 25px;
+}
+.twitter-icon-box img {
+  width: 16px;
+  height: 16px;
+}
+
+/* SUB IMAGES */
+.course-detail-subimage {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  width: 53%;
+  justify-content: center;
+}
+
+.course-detail-subimage img {
+  width: 130px;
+  height: 130px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .course-detail-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel-arrow {
+    display: none;
+  }
+
+  .carousel-dots {
+    display: flex;
+  }
+
+  .course-detail-subimage {
+    display: none;
+  }
+}
+
+/* COURSE NAV CONTAINER */
+.course-nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 86%;
+}
+
+/* OUTER BOX */
+.course-nav-box {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden; /* keeps rounded corners clean */
+  background: #fff;
+}
+
+/* INDIVIDUAL BUTTON */
+.course-nav-btn {
+  width: 40px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  color: #111;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* DIVIDER BETWEEN BUTTONS */
+.course-nav-btn + .course-nav-btn {
+  border-left: 1px solid #ccc;
+}
+
+/* HOVER EFFECT */
+.course-nav-btn:hover:not(:disabled) {
+  background: #f2f2f2;
+}
+
+/* DISABLED STATE */
+.course-nav-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.course-detail-header {
+  display: flex;
+  margin-bottom: 12px;
+}
+.course-detail-breadcrumb {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #888;
+  width: 50%;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.course-detail-breadcrumb span:hover {
+  color: #0b2cff; /* dark blue */
+}

@@ -1,5 +1,6 @@
 .courses-page {
   padding: 80px 60px 40px;
+  font-family: var(--global-body-font-family), system-ui, sans-serif;
 }
 
 .page-header {

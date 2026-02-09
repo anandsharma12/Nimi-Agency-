@@ -1,6 +1,7 @@
 /* ================= GENERAL ================= */
 .about-page {
   font-family: var(--global-body-font-family), system-ui, sans-serif;
+  background: #f6f6f6; /* light gray */
 }
 
 /* ================= ABOUT SECTION ================= */
@@ -56,7 +57,6 @@
 }
 
 .about-section {
-  background: #fff;
   padding: 120px 80px;
 }
 
@@ -193,7 +193,7 @@
 }
 
 .about-fifth-text-below {
-  margin-top: 20px;
+  margin: 34px 0 10px 0;
   width: 80%; /* same as image wrapper */
   max-width: 1100px;
   text-align: left;

@@ -49,7 +49,7 @@ const Courses = () => {
       {/* GRID */}
       <div className="courses-grid">
         {sortedCourses.map((course) => (
-          <StoreItemCard key={course.id} product={course} />
+          <StoreItemCard key={course.id} product={course} isCourse = {true}/>
         ))}
       </div>
 

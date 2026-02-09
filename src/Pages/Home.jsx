@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Home.css";
 import Header from "../Components/Header/Header";
 const Home = () => {
@@ -6,7 +7,9 @@ const Home = () => {
     <div className="home-page">
       <section className="hero">
         <div className="overlay">
-          <button className="contact-btn">Contact</button>
+          <NavLink to="/contact">
+            <button className="contact-btn">Contact</button>
+          </NavLink>
         </div>
       </section>
       <section className="second-section">

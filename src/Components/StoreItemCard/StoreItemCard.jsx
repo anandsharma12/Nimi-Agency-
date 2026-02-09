@@ -1,13 +1,21 @@
 import { useNavigate } from "react-router-dom";
 import "./StoreItemCard.css";
 
-const StoreItemCard = ({ product }) => {
+const StoreItemCard = ({ product, isCourse}) => {
   const navigate = useNavigate();
+
+  function navigation () {
+    if (isCourse) {
+      navigate(`/courses/${product.id}`)
+    } else {
+      navigate(`/products/${product.id}`)
+    }
+  };
 
   return (
     <div
       className="product-card"
-      onClick={() => navigate(`/products/${product.id}`)}
+      onClick={() => navigation()}
     >
       <div className="product-image-wrapper">
         {product?.soldOut === true  && <span className="sold-out">SOLD OUT</span>}

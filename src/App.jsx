@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Contact from "./Pages/Contact";
 import CourseDetail from "./Components/CourseDetail/CourseDetail";
+import ProductsDetails from "./Components/ProductsDetails/ProductsDetails";
 import Footer from "./Components/Footer/Footer";
 import Cart from "./Pages/Cart/Cart";
 
@@ -21,7 +22,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/products" element={<Products />} />
         <Route path="/courses" element={<Courses />} />
-        <Route path="/products/:id" element={<CourseDetail />} />
+        <Route path="/courses/:id" element={<CourseDetail />} />
+        <Route path="/products/:id" element={<ProductsDetails />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer />

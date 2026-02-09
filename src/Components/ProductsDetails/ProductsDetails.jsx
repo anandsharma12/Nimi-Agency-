@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { courses } from "../../data/courses";
-import "./CourseDetail.css";
+import { products } from "../../data/products.js";
+import "./ProductsDetails.css";
 import facebook from "../../assets/images/facebook.png";
 import twitter from "../../assets/images/twitter.webp";
 import pin from "../../assets/images/pin.webp";
@@ -40,21 +40,21 @@ const CourseDetail = () => {
 
   const navigate = useNavigate();
 
-  const currentIndex = courses.findIndex((course) => course.id === Number(id));
+  const currentIndex = products.findIndex((course) => course.id === Number(id));
 
   const goPrevCourse = () => {
     if (currentIndex > 0) {
-      navigate(`/courses/${courses[currentIndex - 1].id}`);
+      navigate(`/products/${products[currentIndex - 1].id}`);
     }
   };
 
   const goNextCourse = () => {
-    if (currentIndex < courses.length - 1) {
-      navigate(`/courses/${courses[currentIndex + 1].id}`);
+    if (currentIndex < products.length - 1) {
+      navigate(`/products/${products[currentIndex + 1].id}`);
     }
   };
 
-  const course = courses.find((course) => course.id === Number(id));
+  const course = products.find((course) => course.id === Number(id));
 
   if (!course) return <p>Course not found</p>;
 
@@ -90,7 +90,7 @@ const CourseDetail = () => {
             <button
               className="course-nav-btn"
               onClick={goNextCourse}
-              disabled={currentIndex === courses.length - 1}
+              disabled={currentIndex === products.length - 1}
             >
               ›
             </button>
